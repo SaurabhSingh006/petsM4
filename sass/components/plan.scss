@@ -1,0 +1,54 @@
+.plan {
+  margin: 5rem 0rem; 
+
+  &__containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+    @media(max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &__item {
+    background-color: #f4f4f5;
+    border-radius: 30px;
+    padding: 5rem;
+
+    @media(max-width: 600px) {
+      padding: 1rem;
+      border-radius: 3rem;
+      width: 80%;
+      text-align: center;  
+      margin: auto;
+    }
+
+    &:nth-child(2) {
+      background-color: rgb(228, 94, 46);  
+      color: white;  
+
+      &__svg {
+        fill: white;
+      }
+    }
+  }
+
+  &__heading {
+    margin: 2rem 0rem; 
+  }
+
+  &__svg {
+    width: 6rem; 
+    margin: auto; 
+  }
+
+  &__listContain {
+    margin: 2rem 0rem; 
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 1rem 0rem;
+  }
+}

@@ -1,0 +1,68 @@
+//Styling Navigation
+.nav {
+  background-color: white;   
+  padding: 1rem 5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; 
+  top: 0%;
+  left: 0%;
+  width: 100%; 
+  z-index: 50;
+  
+  &__logo {  
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
+    &--img {
+      height: 5rem;
+    }
+
+    span {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-left: 1rem;  
+    }
+  }        
+
+  &__content {
+    background-color: white;
+    display: flex;     
+    align-items: center; 
+
+    @media(max-width: 600px) {
+      display: none;
+    } 
+  } 
+
+  &__link {
+    text-decoration: none; 
+    color: var(--txtColor);
+    font-size: 1.6rem;
+    font-weight: 700;  
+    margin: 0rem 3rem; 
+
+    &:hover {
+      color: var(--orange);
+      text-decoration: underline;
+    }
+    
+    &:hover &--arrow use{  
+      fill: #f66373;
+    }
+
+    &--arrow { 
+      width: 1rem;
+    }
+  }
+
+  &__btn {
+    margin-left: 2rem;
+  }
+
+  &__dropdwn-content {
+    display: none;
+  }
+}

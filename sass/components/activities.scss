@@ -1,0 +1,44 @@
+.activities {
+  padding: 5rem;
+
+  &__containerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin: 3rem 0rem;
+
+    @media(max-width: 600px) {
+      grid-template-columns: 1fr; 
+    }
+  }
+ 
+  &__item { 
+    border-radius: 10px; 
+    height: 30rem;  
+    overflow: hidden;
+
+    @media(max-width: 600px) {
+      width: 100%;  
+      height: unset; 
+    }
+  }
+
+  &__image {
+    border-radius: 10px; 
+    height: 100%; 
+    //width: 100%;
+    background-size: cover;  
+    object-fit: fill; 
+
+    @media(max-width: 600px) {
+      width: 100%;  
+      height: unset;
+    }
+  }
+} 

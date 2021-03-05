@@ -1,0 +1,75 @@
+.welcome { 
+  padding: 0rem 7rem;       
+
+  &__containerFlex {  
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__containerGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;    
+    margin: 2rem 0rem;
+    
+    @media(max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__book {
+    background-image: url('./../../images/bone.png');
+    background-repeat: no-repeat;
+    margin-left: 10rem;
+    display: flex; 
+    justify-content: center;   
+    align-items: center;   
+    position: relative;    
+    
+    &--txt {
+      padding: 0rem 7rem;     
+      color: white;
+      font-size: 2rem;    
+      font-weight: 800;                
+      transform: translateY(-10px) rotateZ(-6deg); 
+    }
+  }
+
+  &__item { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 4rem 0rem;      
+  }
+
+  &__chart {
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem; 
+    background-color: #d5d5d6;
+    border-radius: 100px;
+
+    &--contain {
+      background-color: white;
+      height: 100%;   
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+  } 
+  
+  &__heading {
+    font-size: 1.6rem; 
+    font-weight: 600; 
+    margin: 1.2rem; 
+  }
+}

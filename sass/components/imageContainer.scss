@@ -1,0 +1,23 @@
+.image {
+  width: 67rem;    
+
+  @media(max-width: 1024px) {
+    width: 60rem;                 
+  }
+  @media(max-width: 768px) {
+    width: 90%;                      
+  }
+
+  &__flip {
+    transform: scaleX(-1);
+  } 
+
+  &__float-right {
+    float: right; 
+  }
+
+  &__float-left {
+    float: left;
+  }
+
+} 

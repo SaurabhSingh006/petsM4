@@ -1,0 +1,18 @@
+.whiteBtn {
+  border: 2px solid var(--orange);
+  border-radius: 0rem 10rem 10rem;
+  padding: 1rem;
+  outline: none;
+  background-color: transparent;
+  color: var(--txtColor);
+  font-weight: 700;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  transition: .3s background-color;
+
+  &:hover {
+    background-color: var(--orange);
+    color: white;
+    text-decoration: underline;
+  }
+}

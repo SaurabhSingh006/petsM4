@@ -1,0 +1,72 @@
+.header {  
+
+  &__container {
+    width: 75%;
+    padding: 12rem 0rem;
+    background-color: white;
+    
+    @media(max-width: 768px) {
+      padding: 10rem 2rem 6rem;
+      width: 85%;
+      margin: auto;  
+    } 
+    
+    @media(max-width: 600px) {
+      padding: 10rem 0rem 0rem; 
+    }
+  }    
+
+  &__heading {   
+    font-weight: 800;
+    font-size: 5.5rem;
+    
+    @media(max-width: 600px) {
+      font-weight: 600;
+      font-size: 3.5rem; 
+    }
+  }
+
+  &__paragraph {
+    font-size: 2rem;
+    padding: 2rem 0rem;
+  }
+
+  &__cutout { 
+    width: 75%; 
+    
+    @media(max-width: 768px) {
+      width: 70%; 
+    }
+    @media(max-width: 600px) {
+      width: 90%; 
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    &--image {
+      width: 3.5rem;
+    }
+
+    &--text {
+      font-weight: 800;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    padding: 1.5rem 2rem !important;   
+  }
+}

@@ -1,0 +1,23 @@
+// Importing partial SASS files
+
+@import "base/base";
+@import "base/layoutController";
+
+@import "components/activities.scss";
+@import "components/cards.scss";
+@import "components/contact.scss";
+@import "components/imageContainer.scss";
+@import "components/instruction1.scss";
+@import "components/instruction2.scss";
+@import 'components/plan.scss';
+@import "components/slider.scss";
+@import "components/teach.scss";
+@import "components/team.scss";
+@import "components/welcome.scss";
+
+@import "layout/header";
+@import "layout/navigation"; 
+
+@import 'utils/orangetxt.scss';
+@import "utils/orangeBtn";
+@import "utils/whiteBtn";

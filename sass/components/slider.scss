@@ -1,0 +1,25 @@
+.slider {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.slide { 
+  &__image { 
+    height: 12rem;
+    width: 12rem;       
+    border-radius: 100px;  
+    overflow: hidden; 
+  } 
+
+  &__para {
+    width: 60%; 
+  } 
+
+  &__owner-name {      
+    font-size: 2.2rem;  
+    font-weight: 800;
+    margin: .5rem 0rem; 
+  }
+}
